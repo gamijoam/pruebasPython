@@ -23,8 +23,11 @@ class Coche:
     def set_modelo(self,modelo):
         self._modelo = modelo
 
-    def arrancar():
+    def arrancar(self):
         print('Ya arrancando')
         self.motor.encender()
 
 
+motor1 = Motor('V8')
+coche1 = Coche('Chevrolet','Optra',motor1)
+coche1.arrancar()
